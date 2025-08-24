@@ -1,12 +1,12 @@
 Début
 
-  // Initialisation des compteurs
+  // Initialisation
   longueur <- 0
   mots <- 1
   voyelles <- 0
 
   Afficher "Entrez une phrase qui se termine par un point :"
-  Lire caractère c
+  Lire c
 
   Tant que c != '.'
       longueur <- longueur + 1
@@ -19,13 +19,12 @@ Début
           voyelles <- voyelles + 1
       Fin Si
 
-      Lire caractère c
+      Lire c
   Fin Tant que
 
-  // Ajouter le point final à la longueur
+  // Ajouter le point à la longueur
   longueur <- longueur + 1
 
-  // Affichage des résultats
   Afficher "Longueur de la phrase : ", longueur
   Afficher "Nombre de mots : ", mots
   Afficher "Nombre de voyelles : ", voyelles
